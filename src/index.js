@@ -4,13 +4,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //Components
-import { Greeting, UserCard } from "./Greeting";
+// import { Greeting, UserCard } from "./Greeting";
+import { Button } from "./Button";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <UserCard
+    <Button text="Prev" />
+
+    <Button text="Pay" />
+    <Button text="Next" />
+    {/* <UserCard
       name="Deury"
       amount={5000}
       married={true}
@@ -32,6 +37,6 @@ root.render(
         city: "San Juan",
         country: "Puerto Rico",
       }}
-    />
+    /> */}
   </>
 );

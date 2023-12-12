@@ -1,3 +1,5 @@
+
+//Esto vendría desde un backend
 const users = [
     { id: 1, name: "Deury", image: "https://robohash.org/robot1" },
     { id: 2, name: "Pedro", image: "https://robohash.org/robot2" },

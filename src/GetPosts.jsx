@@ -1,3 +1,5 @@
+import { AiTwotoneAlert } from "react-icons/ai";
+
 export const GetPosts = ()=>{
 return <button onClick={()=>{
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -5,6 +7,6 @@ return <button onClick={()=>{
     .then((data)=>console.log(data))
     .catch(e=>console.error(e))
 
-}}>Traer datos</button>
+}}> Traer datos <AiTwotoneAlert/></button>
 }
 

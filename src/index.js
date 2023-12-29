@@ -1,24 +1,34 @@
 // React App
 
 import React from "react";
+import { useState, useEffect } from "react";
+
 import ReactDOM from "react-dom/client";
 
 //Components
-// import { GetUsers } from "./GetUsers";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const Contador = () => {
-  let counter = 0;
+const Counter = () => {
+  const [message, setMessage] = useState("");
+  useEffect(() => console.log("render"), []);
+
   return (
     <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={() => (counter = counter + 10)}>Incrementar</button>
+      <input onChange={(e) => setMessage(e.target.value)} />
+      <button
+        onClick={() => {
+          alert(`El mensaje es: ${message}`);
+        }}
+      >
+        Save
+      </button>
     </div>
   );
 };
 
 root.render(
   <>
-    <Contador />
+    <Counter />
   </>
 );

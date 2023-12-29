@@ -7,8 +7,18 @@ import ReactDOM from "react-dom/client";
 // import { GetUsers } from "./GetUsers";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const Contador = () => {
+  let counter = 0;
+  return (
+    <div>
+      <h1>Counter: {counter}</h1>
+      <button onClick={() => (counter = counter + 10)}>Incrementar</button>
+    </div>
+  );
+};
+
 root.render(
   <>
-    <h1>Counter</h1>
+    <Contador />
   </>
 );
